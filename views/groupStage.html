@@ -1,0 +1,30 @@
+<div ng-controller='groupCtrl'>
+
+<section class='column-section'>
+
+	<section class='column'>
+		
+		<team-click ng-repeat='match in groupDay1' day='groupDay1' match='match'></team-click>
+	
+	</section>
+	
+	<section class='column'>
+		
+		<team-click ng-repeat='match in groupDay2' day='groupDay3' match='match'></team-click>
+
+	</section>
+	
+	<section class='column'>
+
+		<team-click ng-repeat='match in groupDay3' day='groupDay3' match='match'></team-click>
+	
+	</section>
+
+</section>
+
+</div> <!-- end groupCtrl -->
+
+	<!-- <match team1 = "teams.sweden" team2 = "teams.southAfrica" > -->
+		<!-- ng-click="teams.sweden.addPoints(3)" -->
+		<!-- </match> -->
+		

@@ -1,0 +1,9 @@
+.bracket-section {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+h3 {
+	text-align: center;
+}

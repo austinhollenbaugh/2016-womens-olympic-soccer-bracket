@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app='bracketApp'>
+<head>
+	<title>Olympic Soccer Bracket</title>
+	
+
+	<!-- RESET -->
+	<link rel="stylesheet" type="text/css" href="styles/reset.css">
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+	<link rel="stylesheet" type="text/css" href="styles/bracket.css">
+	<link rel="stylesheet" type="text/css" href="styles/groupStage.css">
+	<link rel="stylesheet" type="text/css" href="styles/home.css">
+</head>
+<body>
+
+	<h1>Olympic Women's Soccer Bracket</h1>
+
+	<nav>
+		<ul>
+			<li ui-sref='home'>Home</li>
+			<li ui-sref='groupStage'>Group Stage</li>
+			<li ui-sref='bracket'>Bracket</li>
+		</ul>
+	</nav>
+
+	<ui-view></ui-view>
+
+<!-- ANGULAR SCRIPTS -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+
+<!-- CUSTOM SCRIPTS -->
+<script src="js/app.js"></script>
+<script src="js/services/groupSrv.js"></script>
+<script src="js/controllers/homeCtrl.js"></script>
+<script src="js/controllers/groupCtrl.js"></script>
+<script src="js/controllers/bracketCtrl.js"></script>
+<script src="js/groupDirective.js"></script>
+<script src="groupStageTmpl.html"></script>
+
+</body>
+</html>
