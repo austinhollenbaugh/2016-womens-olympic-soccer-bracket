@@ -9,7 +9,7 @@ angular
 			.state ('groupStage', {
 				url: '/group-stage',
 				templateUrl: '../views/groupStage.html',
-				controller: 'groupCtrl',
+				controller: 'bracketCtrl',
 				controllerAs: 'vm'
 			})
 			.state ('bracket', {
