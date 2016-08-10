@@ -1,19 +1,49 @@
 body {
-	background-color: grey;
-	/*display: block;*/
+	background-color: #FCFCFC;
 	
+}
+
+nav {
+	display: inline-block;
+	background-color: #427EBE;
+	color: #FCFCFC;
+	font-weight: 100;
+	width: 100%;
+	padding: 10px;
+
+	-webkit-box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+ 	-moz-box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+ 	box-shadow: 0 5px 20px rgba(0,0,0,0.6);
+	/*display: inline-block;*/
+	/*display: flex;
+	justify-content: flex-end;*/
 }
 
 h1 {
 	width: 100%; 
-	text-align: center;
 	padding: 10px;
+	font-family: 'Lato', sans-serif;
+	font-size: 3rem;
+	cursor: pointer;
+	
 }
 
-ul {
+nav ul {
 	width: 100%;
-	padding: 10px;	
-	display: flex;
-	justify-content: space-around
+	padding: 10px;
+	justify-content: flex-end;
 
 }
+
+nav ul li {
+	display: inline;
+	margin: 5px;
+	color: #FCFCFC;
+
+}
+
+li {
+	font-family: 'Lato', sans-serif;
+	cursor: pointer;
+}
+

@@ -1,30 +1,173 @@
 <div ng-controller='groupCtrl'>
 
-<section class='column-section'>
+<group-rating></group-rating>
 
-	<section class='column'>
-		
-		<team-click ng-repeat='match in groupDay1' day='groupDay1' match='match'></team-click>
-	
+<section class='instructions'>
+
+	<!-- <p>The 12 women's olympic soccer teams are divided into three groups of four. During the group stage, each team must play each other team in their group once, and the teams are then ranked based on the scores they earn during these matches. These rankings determine which teams move on to quarter finals.</p><br> -->
+
+	<p class='bold-instr'>Decide how you think the teams in each group will rank.</p><br>
+
+	<p class='bold-instr'>Your rankings will determine the first phase of your bracket.</p>
+
+</section>
+
+<main class='main-section-group'>
+	<section class='group-container'>
+
+		<h2 class='group-title'>E</h2>
+		<section class='group'>
+			<ul class='sortable' id='groupE'>
+				<li><img class='flag' src="http://www.geonames.org/flags/x/br.gif">Brazil </li>
+				<li><img class='flag' src="http://www.geonames.org/flags/x/cn.gif">China</li>
+				<li><img class='flag' src="http://www.geonames.org/flags/x/se.gif">Sweden </li>
+				<li><img class='flag' src="http://www.geonames.org/flags/x/za.gif">South Africa </li>
+			</ul>
+		</section>
+
 	</section>
-	
-	<section class='column'>
-		
-		<team-click ng-repeat='match in groupDay2' day='groupDay3' match='match'></team-click>
+
+	<section class='group-container'>
+
+		<h2 class='group-title'>F</h2>
+		<section class='group'>
+		<ul class='sortable' id='groupF'>
+			<li><img class='flag' src="http://www.geonames.org/flags/x/ca.gif">Canada </li>
+			<li><img class='flag' src="http://www.geonames.org/flags/x/au.gif">Australia </li>
+			<li><img class='flag' src="http://www.geonames.org/flags/x/zw.gif">Zimbabwe </li>
+			<li><img class='flag' src="http://www.geonames.org/flags/x/de.gif">Germany </li>
+		</ul>
+		</section>
+
+	<!-- class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span> -->
 
 	</section>
-	
-	<section class='column'>
 
-		<team-click ng-repeat='match in groupDay3' day='groupDay3' match='match'></team-click>
-	
+</main>
+
+
+
+
+<section class='group-container' id='needs-width'>
+
+	<h2 class='group-title'>G</h2>
+	<section class='group'>
+	<ul class='sortable' id='groupG'>
+		<li><img class='flag' src="http://www.geonames.org/flags/x/us.gif">USA </li>
+		<li><img class='flag' src="http://www.geonames.org/flags/x/nz.gif">New Zealand </li>
+		<li><img class='flag' src="http://www.geonames.org/flags/x/fr.gif">France </li>
+		<li><img class='flag' src="http://www.geonames.org/flags/x/co.gif">Colombia </li>
+	</ul>
 	</section>
 
 </section>
 
+</section>
+
+<!-- Trigger/Open The Modal -->
+<section class='modal-container'>
+	<link rel="modal:open" type="text/css" href="">
+		<button class='next-btn' ng-click='loadBracket()' id="myBtn">Next</button>
+	</link>
+</section>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <p class='modal-instr'><b>Only two teams ranked in third place can play in quarterfinals.</b></p> <br> 
+
+    <p>Which of your 3rd-placed teams do you predict <b>won't</b> make the cut?</p>
+    <ul class='thirds-list'>
+    	<li class='thirds-li' ui-sref='bracket' ng-click='loadThirds("e")'>{{ eRanking[2] }}</li>
+    	<li class='thirds-li' ui-sref='bracket' ng-click='loadThirds("f")'>{{ fRanking[2] }}</li>
+    	<li class='thirds-li' ui-sref='bracket' ng-click='loadThirds("g")'>{{ gRanking[2] }}</li>
+
+    </ul>
+
+    <!-- <div class="ng-hide" ng-hide='third-clicked' ng-repeat="team in thirds">
+    	<third-choice></third-choice>
+    	<div class='option-buttons'>
+    	 <button  ui-sref='bracket' class="close">Yes, show me my bracket.</button>
+    	 <button class="close">No, I changed my mind.</button> 
+    </div>
+
+
+    </div> -->
+
+   
+  </div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+// span.onclick = function() {
+//     modal.style.display = "none";
+// }
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
 </div> <!-- end groupCtrl -->
 
-	<!-- <match team1 = "teams.sweden" team2 = "teams.southAfrica" > -->
-		<!-- ng-click="teams.sweden.addPoints(3)" -->
-		<!-- </match> -->
+
+<!-- <section class='group'>
+
+<ul id="sortable">
+  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 1</li>
+  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 2</li>
+  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 3</li>
+  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 4</li>
+  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 5</li>
+  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 6</li>
+  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 7</li>
+</ul>
+
+</section> -->
+
+
+
+<!-- <section class='column-section'>
+
+	<section class='column'>
+
+		<group-stage ng-repeat='match in matches[0]' team-data='match'></group-stage>
+	
+	</section>
+	
+	<section class='column'>
 		
+		<group-stage ng-repeat='match in matches[1]' team-data='match'></group-stage>
+
+	</section>
+	
+	<section class='column'>
+
+		<group-stage ng-repeat='match in matches[2]' team-data='match'></group-stage>
+	
+	</section>
+
+</section> -->
+
+

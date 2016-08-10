@@ -1,6 +1,16 @@
 
-<div class='match'>
-	<div class='team' ng-click='points(match.team1, day)'>{{ match.team1 }}</div>
-	<div class='team' ng-click='points(match, day)'>{{ match.team2 }}</div>
-</div>
+
+	<div class='match'>
+		<div class='team' ng-click='updateScore(teamData.id1)'>{{ teamData.team1 }}</div>
+		<div class='team' ng-click='updateScore(teamData.id2)'>{{ teamData.team2 }}</div>
+	</div>
+
+
+
+
+<!-- ng-click isn't doing anything when clicked -->
+
+
+
+
 
