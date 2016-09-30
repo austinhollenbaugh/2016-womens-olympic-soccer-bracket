@@ -1,3 +1,7 @@
+.group-stage-page {
+	height: 80vh;
+}
+
 .team {
 	cursor: pointer;
 }
@@ -5,27 +9,34 @@
 .instructions {
 	font-family: 'Lato', sans-serif;
 	text-align: center;
-	margin: 20px 42px;
-	margin-top: 40px;
+	padding: 20px;
+	/*margin: 20px 42px;*/
 }
 
 .bold-instr {
 	font-weight: bold;
 	font-size: 1.5rem;
+	margin-left: 50px;
+	margin-right: 50px;
 }
 
 .main-section-group {
 	display: flex;
 	justify-content: space-around;
+	height: 55vh;
+	flex-wrap: wrap;
 }
 
 .group-container {
 	background-color: #A20B00;
 	text-align: center;
-	margin: 20px auto;
 	display: flex;
 	justify-content: center;
-	width: 550px;
+	/*width: 550px;*/
+	height: 250px;
+	-webkit-box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+	box-shadow: 0 5px 20px rgba(0,0,0,0.6);
 }
 
 .group-title {
@@ -35,37 +46,40 @@
 	font-weight: 100;
 	color: #FCFCFC;
 	margin: 10px;
-	
+
 }
 
 .flag {
-	height: 30px;
-	width: 45px;
-	margin: 3px;
+	height: 20px;
+	width: 30px;
+}
+
+.country-name {
+	margin: 10px;
 }
 
 .group-container ul {
 	margin: 2.5rem;
-	width: 60%;
+	width: 50%;
 }
 
 .sortable li {
 	margin: 7px;
 	padding: 8px;
-	font-size: 1.5rem;
+	font-size: 1.25rem;
 	font-weight: 100;
 	text-align: left;
 	/*border: .5px solid grey;*/
 	background-color: #740000;
 	color: #FCFCFC;
-	width: 225px;
+	width: 175px;
 }
 
 .modal-container {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding-bottom: 50px;
+	padding-top: 30px;
 }
 
 .next-btn {
@@ -116,8 +130,8 @@
 
 .modal-instr {
 	padding: 10px;
-	
-	
+
+
 }
 
 /* The Close Button */
@@ -128,15 +142,15 @@
     font-size: 28px;
 
 
-    
+
 }
 
 .close:hover,
 .close:focus {
-   
+
     text-decoration: none;
     cursor: pointer;
-    
+
 }
 
 .thirds-list {
@@ -149,18 +163,18 @@
 }
 
 .thirds-li {
-	
+
 	margin: 1rem;
 	padding: 8px;
 	font-size: 1.5rem;
-	background-color: #A20B00; 
+	background-color: #A20B00;
 	width: 200px;
-	
+
 
 }
 
 .ng-hide {
-	
+
 }
 
 b {
@@ -175,7 +189,7 @@ b {
 /*.column-section {
 	display: flex;
 	justify-content: space-around;
-	
+
 
 }*/
 
@@ -188,7 +202,7 @@ b {
 
 	.group-title {
 	font-size: 20rem;
-	
+
 	}
 }*/
 
