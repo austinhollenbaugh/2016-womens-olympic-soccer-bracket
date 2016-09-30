@@ -12,6 +12,8 @@
 .bold-instr {
 	font-weight: bold;
 	font-size: 1.5rem;
+	margin-left: 200px;
+	margin-right: 150px;
 }
 
 .main-section-group {
@@ -22,10 +24,13 @@
 .group-container {
 	background-color: #A20B00;
 	text-align: center;
-	margin: 20px auto;
+	/*margin: 20px auto;*/
 	display: flex;
 	justify-content: center;
 	width: 550px;
+	-webkit-box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+	box-shadow: 0 5px 20px rgba(0,0,0,0.6);
 }
 
 .group-title {
@@ -35,7 +40,7 @@
 	font-weight: 100;
 	color: #FCFCFC;
 	margin: 10px;
-	
+
 }
 
 .flag {
@@ -116,8 +121,8 @@
 
 .modal-instr {
 	padding: 10px;
-	
-	
+
+
 }
 
 /* The Close Button */
@@ -128,15 +133,15 @@
     font-size: 28px;
 
 
-    
+
 }
 
 .close:hover,
 .close:focus {
-   
+
     text-decoration: none;
     cursor: pointer;
-    
+
 }
 
 .thirds-list {
@@ -149,18 +154,18 @@
 }
 
 .thirds-li {
-	
+
 	margin: 1rem;
 	padding: 8px;
 	font-size: 1.5rem;
-	background-color: #A20B00; 
+	background-color: #A20B00;
 	width: 200px;
-	
+
 
 }
 
 .ng-hide {
-	
+
 }
 
 b {
@@ -175,7 +180,7 @@ b {
 /*.column-section {
 	display: flex;
 	justify-content: space-around;
-	
+
 
 }*/
 
@@ -188,7 +193,7 @@ b {
 
 	.group-title {
 	font-size: 20rem;
-	
+
 	}
 }*/
 

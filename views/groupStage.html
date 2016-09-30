@@ -4,9 +4,7 @@
 
 <section class='instructions'>
 
-	<!-- <p>The 12 women's olympic soccer teams are divided into three groups of four. During the group stage, each team must play each other team in their group once, and the teams are then ranked based on the scores they earn during these matches. These rankings determine which teams move on to quarter finals.</p><br> -->
-
-	<p class='bold-instr'>Decide how you think the teams in each group will rank.</p><br>
+	<p class='bold-instr'>Drag and drop the teams to decide how you think each group's rankings will come out after the first stage.</p><br>
 
 	<p class='bold-instr'>Your rankings will determine the first phase of your bracket.</p>
 
@@ -41,26 +39,23 @@
 
 	<!-- class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span> -->
 
+	<section class='group-container' id='needs-width'>
+
+		<h2 class='group-title'>G</h2>
+		<section class='group'>
+		<ul class='sortable' id='groupG'>
+			<li><img class='flag' src="http://www.geonames.org/flags/x/us.gif">USA </li>
+			<li><img class='flag' src="http://www.geonames.org/flags/x/nz.gif">New Zealand </li>
+			<li><img class='flag' src="http://www.geonames.org/flags/x/fr.gif">France </li>
+			<li><img class='flag' src="http://www.geonames.org/flags/x/co.gif">Colombia </li>
+		</ul>
+		</section>
+
+	</section>
+
 	</section>
 
 </main>
-
-
-
-
-<section class='group-container' id='needs-width'>
-
-	<h2 class='group-title'>G</h2>
-	<section class='group'>
-	<ul class='sortable' id='groupG'>
-		<li><img class='flag' src="http://www.geonames.org/flags/x/us.gif">USA </li>
-		<li><img class='flag' src="http://www.geonames.org/flags/x/nz.gif">New Zealand </li>
-		<li><img class='flag' src="http://www.geonames.org/flags/x/fr.gif">France </li>
-		<li><img class='flag' src="http://www.geonames.org/flags/x/co.gif">Colombia </li>
-	</ul>
-	</section>
-
-</section>
 
 </section>
 
@@ -76,7 +71,7 @@
 
   <!-- Modal content -->
   <div class="modal-content">
-    <p class='modal-instr'><b>Only two teams ranked in third place can play in quarterfinals.</b></p> <br> 
+    <p class='modal-instr'><b>Only two teams ranked in third place can play in quarterfinals.</b></p> <br>
 
     <p>Which of your 3rd-placed teams do you predict <b>won't</b> make the cut?</p>
     <ul class='thirds-list'>
@@ -90,13 +85,13 @@
     	<third-choice></third-choice>
     	<div class='option-buttons'>
     	 <button  ui-sref='bracket' class="close">Yes, show me my bracket.</button>
-    	 <button class="close">No, I changed my mind.</button> 
+    	 <button class="close">No, I changed my mind.</button>
     </div>
 
 
     </div> -->
 
-   
+
   </div>
 
 </div>
@@ -153,21 +148,19 @@ window.onclick = function(event) {
 	<section class='column'>
 
 		<group-stage ng-repeat='match in matches[0]' team-data='match'></group-stage>
-	
+
 	</section>
-	
+
 	<section class='column'>
-		
+
 		<group-stage ng-repeat='match in matches[1]' team-data='match'></group-stage>
 
 	</section>
-	
+
 	<section class='column'>
 
 		<group-stage ng-repeat='match in matches[2]' team-data='match'></group-stage>
-	
+
 	</section>
 
 </section> -->
-
-
