@@ -1,3 +1,9 @@
+<section class="instructions">
+	<div class="bold-instr">
+	To finish your bracket, click on the team you think will win each match.
+	</div>
+</section>
+
 <section class='bracket-section' group-rating>
 
 	<section class='quarter-finals column'>
@@ -6,41 +12,41 @@
 			<div class='team' ng-click='semifinals1 = eRanking[0]'>{{ eRanking[0] }}</div>
 			<div class='team' ng-click='semifinals1 = thirdFG'>{{ thirdFG }}</div>
 		</div>
-	
+
 		<div class='match'>
 			<div class='team' ng-click='semifinals2 = gRanking[0]'>{{ gRanking[0] }}</div>
 			<div class='team' ng-click='semifinals2 = thirdEF'>{{ thirdEF }}</div>
-	
+
 		</div>
-	
+
 		<div class='match'>
 			<div class='team' ng-click='semifinals3 = fRanking[0]'>{{ fRanking[0] }}</div>
 			<div class='team' ng-click='semifinals3 = gRanking[1]'>{{ gRanking[1] }}</div>
 		</div>
-	
+
 		<div class='match'>
 			<div class='team' ng-click='semifinals4 = eRanking[1]'>{{ eRanking[1] }}</div>
 			<div class='team' ng-click='semifinals4 = fRanking[1]'>{{ fRanking[1] }}</div>
 		</div>
-	
+
 	</section>
-	
-	
+
+
 	<section class='semi-finals column'>
 		<h3>Semi-Finals</h3>
 		<div class='match'>
 			<div class='team' ng-click='finals1 = semifinals1; bronze1 = semifinals2'>{{ semifinals1 }}</div>
 			<div class='team' ng-click='finals1 = semifinals2; bronze1 = semifinals1'>{{ semifinals2 }}</div>
 		</div>
-	
+
 		<div class='match'>
 			<div class='team' ng-click='finals2 = semifinals3; bronze2 = semifinals4'>{{ semifinals3 }}</div>
 			<div class='team' ng-click='finals2 = semifinals4; bronze2 = semifinals3'>{{ semifinals4 }}</div>
 		</div>
-	
+
 	</section>
-	
-	
+
+
 	<section class='finals column'>
 		<h3>Finals</h3>
 		<div class='match'>
@@ -55,7 +61,7 @@
 				<div class='team' ng-click='bronze = bronze1'>{{ bronze1 }}</div>
 				<div class='team' ng-click='bronze = bronze2'>{{ bronze2 }}</div>
 			</div>
-	
+
 	</section>
 
 	<!-- <section class='non-bracket'>
@@ -63,12 +69,12 @@
 		<section class='bronze-medal'>
 
 			<h5>Bronze medal round</h5>
-	
+
 			<div class='match'>
 				<div class='team' ng-click='bronze = bronze1'>{{ bronze1 }}</div>
 				<div class='team' ng-click='bronze = bronze2'>{{ bronze2 }}</div>
 			</div>
-	
+
 		</section>
 
 	</section> -->
@@ -80,19 +86,19 @@
 			<div class='team' id='silver'><span class='silver'>Silver</span> {{ silver }}</div>
 			<div class='team' id='bronze'><span class='bronze'>Bronze</span> {{ bronze }}</div>
 		</div>
-	
+
 	</section>
 
 <!-- 	<section class='non-bracket'>
 
 		<section class='bronze-medal'>
-	
+
 			<div class='match'>
 				<h5>Bronze medal round</h5>
 				<div class='team'>TBD</div>
 				<div class='team'>TBD</div>
 			</div>
-	
+
 		</section>
 
 	</section> -->

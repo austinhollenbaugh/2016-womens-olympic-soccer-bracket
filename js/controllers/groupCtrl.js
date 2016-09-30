@@ -6,7 +6,6 @@ angular
 		$scope.thirdClicked = groupSrv.thirdClicked;
 
 		$scope.loadThirds = function(group) {
-			console.log('groupCtrl', group);
 			groupSrv.setThird(group);
 		};
 	});
